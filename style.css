@@ -1,3 +1,14 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
 body{
     color:blue;
+}
+{
+    background-color: lightblue;
 }
