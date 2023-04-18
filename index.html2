@@ -14,13 +14,30 @@
 
 
 </head>
+<!-- criação de formulário -->
+<main>
+  <form action="/action_page.php" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
+</main>
+
+
+<!--fontes-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 <body>
 
   <!--container-->
   <div class="container>" <nav>
     <a href="index.html">
       <img src="imagens/LOGOMARCA  (1).gif" alt="logo">
+      <img src="https://img.freepik.com/fotos-gratis/sapatos-de-noivo-de-casamento-ficar-em-um-banquinho_8353-9646.jpg?w=900&t=st=1681827407~exp=1681828007~hmac=8014c93ab4f5cd14ecb255d0353794d83138daabef7580a31dea32a267dc09fe">
     </a>
     </nav>
     <ul close="close">
@@ -35,21 +52,6 @@
 
   <nav>
     <ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <address>
