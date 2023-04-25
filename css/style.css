@@ -1,15 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@500&display=swap');
 
-<!--estilo de fontes-->
+:root {
+  --cor-principal: #a75207;
+  --fonte-titulos: 'Anuphan', sans-serif;
+}
 
+body {
+  font-family: Raleway, sans-serif;
+}
 
-.square {
-  width: 300px;
-  height: 300px;
-  background-image: url "https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet";
-  border: solid 2px;
-  text-shadow: white 0px 0px 2px;
-  font-size: 16px;
-  background-size: 150px;
+.titulo-pagina {
+  margin: 40px auto 10px;
+  /*margin: top right bottom left; */
+  padding-left: 10px;
+  width: 80%;
+  font-size: 24pt;
+  font-weight: 700;
+  font-family: var(--fonte-titulos);
+  color: var(--cor-principal);
+  /* Código hexadecimal da cor */
+}
+
+main {
+  margin: auto;
+  width: 80%;
+}
+
+.subtitulo-pagina {
+  margin: 10px auto 10px;
+  padding-left: 10px;
+  width: 80%;
+  font-size: 20pt;
+  font-family: var(--fonte-titulos);
+}
+
+.titulo-artigo {
+  font-size: 18pt;
+  margin: 10px 10px 10px 10px;
+}
+
+.subtitulo-artigo {
+  font-size: 14pt;
+  margin: 10px 10px 10px 10px;
+}
+
+.paragrafo-artigo {
+  font-size: 12pt;
+  margin: 10px 10px 10px 10px;
+  line-height: 1.4;
+}
+
+.link-menu-principal a {
+  text-decoration: none;
+}
+
+.categoria-produto {
+  font-size: 140%;
+  font-weight: 600;
+  font-family: var(--fonte-titulos);
+  margin: 10px 10px 10px 10px;
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  line-height: 3;
+  padding-left: 20px;
+}
+
+.vitrine-produtos {
+  margin: 40px 0;
+}
+
+.product-list {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.imagem-produto {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  object-position: 0 0;
+}
+
+.rodape {
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  padding: 20px;
+}
+
+.imagem-banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 10%;
+}
+
+/* Menu de navegação principal */
+.navbar {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: start;
+}
+
+.navbar li {
+  padding: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.secao-contato {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-form label {
+  width: 100%;
+  display: block;
 }
 
 .contact-form input,
@@ -21,9 +141,65 @@
   box-sizing: border-box;
 }
 
-.secao-contato {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+select {
+
+  height: 1.4rem;
+  margin: 5px 0;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 4rem;
+}
+
+button {
+  line-height: 1.5;
+  box-shadow: #c0c1c2 2px 2px 2px;
+  border-radius: 2px;
+  border: none;
+}
+
+.complementary-info {
+  width: 30%;
+}
+
+.address-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.opening-hours h3,
+.main-address h3 {
+  font-size: 14pt;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.main-address p {
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+
+  main,
+  .menu-navegacao,
+  .titulo-pagina,
+  .subtitulo-pagina,
+  .formulario-contato {
+    width: 100%;
+  }
+
+  .titulo-pagina {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .menu-navegacao li,
+  .rodape {
+    padding: 10px 5px;
+  }
 }
